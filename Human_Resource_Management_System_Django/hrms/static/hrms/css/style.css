@@ -7564,6 +7564,8 @@ figure {
   margin: 0 0 1rem; }
 
 img {
+  height: 25%;
+  padding-right: 5cm;
   vertical-align: middle;
   border-style: none; }
 
@@ -7718,6 +7720,11 @@ h6, .h6 {
 .lead {
   font-size: 1.25rem;
   font-weight: 300; }
+  .Log{
+    position: absolute;
+    font-size: 150px;
+    font-weight: 300;
+  }
 
 .display-1 {
   font-size: 6rem;
@@ -7784,7 +7791,7 @@ mark,
     content: "\2014 \00A0"; }
 
 .img-fluid {
-  max-width: 100%;
+  max-width: 25%;
   height: auto; }
 
 .img-thumbnail {
@@ -7792,8 +7799,8 @@ mark,
   background-color: #fff;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
-  max-width: 100%;
-  height: auto; }
+  max-width: 25%;
+  height: 25%; }
 
 .figure {
   display: inline-block; }
@@ -8256,6 +8263,7 @@ pre {
     flex: 0 0 41.66667%;
     max-width: 41.66667%; }
   .col-lg-6 {
+    padding: 50%;
     flex: 0 0 50%;
     max-width: 50%; }
   .col-lg-7 {
