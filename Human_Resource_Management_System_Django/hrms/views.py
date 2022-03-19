@@ -13,6 +13,7 @@ from django.utils import timezone
 from django.db.models import Q
 
 
+
 # Create your views here.
 class Index(TemplateView):
    template_name = 'hrms/home/home.html'
@@ -90,10 +91,16 @@ class Employee_Update(LoginRequiredMixin,UpdateView):
     template_name = 'hrms/employee/edit.html'
     form_class = EmployeeForm
     login_url = 'hrms:login'
+
+    
     
     
 class Employee_Delete(LoginRequiredMixin,DeleteView):
-    pass
+    model = Employee
+    template_name = 'hrms/employee/delete.html'
+    form_class = EmployeeForm
+    login_url = 'hrms:login'
+
 
 class Employee_Kin_Add (LoginRequiredMixin,CreateView):
     model = Kin
