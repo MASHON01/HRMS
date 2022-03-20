@@ -8,7 +8,8 @@
     <link rel="stylesheet" href=" ../../../../static hrms/css/style.css ">
     <style>
         .body-bg{
-           background: green;  /* fallback for old browsers */
+            background-image: url("{% static 'hrms/images/favicon-1.jpeg' }");
+            background: green;
             background: -webkit-linear-gradient(to right, #ef8e38, #108dc7);  /* Chrome 10-25, Safari 5.1-6 */
             background: linear-gradient(to right, red, blue); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
@@ -22,24 +23,27 @@
             background: #0f0c29;  /* fallback for old browsers */
             background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
             background: linear-gradient(to right, blue, red); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
         }
+        .Log{
+            font-size: 100%;
+            text-align: justify;
+            text-emphasis-position: top;
+        }
+        
     </style>
     <title>Home</title>
 </head>
-<body class='body-bg'>
-
-    <h1 class="Log">NAROK COUNTY GOVERNMENT HRM SYSTEM</h1> 
+<body class='Log'>
+    <img src="{% static 'hrms/images/chmscbin.webp' %}" height="180px" width="180px">&emsp; &emsp; &emsp;
+    <h1>NAROK COUNTY GOVERNMENT HRM SYSTEM</h1>
     <section class="container">
         <nav class="navbar navbar-light bg-light mt-3 mb-2 ">
-            <h1 class="display-4 mt-2 text-right text-warning">  <a href=" {% url 'hrms:recruitment' %} "> &emsp; &emsp; &emsp; &emsp;  &emsp;We are Hiring !!! </a> <a href=" {% url 'hrms:login' %} "> Administrator &rarr; </a>
+            <h1 class="display-4 mt-2 text-right text-warning">  <a href=" {% url 'hrms:recruitment' %} "> &emsp; &emsp; &emsp; &emsp;  &emsp; We are Hiring !!! </a> <a href=" {% url 'hrms:login' %} "> Administrator &rarr; </a>
                
         </nav>
         
         <div class="row">
-            <div class="col-lg-6">
-                <img src="{% static 'hrms/images/chmscbin.webp' %}" class='img-fluid' height="180px" width="180px">
-            </div>
+            
             <div class="col-lg-6">
                 <div class="card mb-3 shadow">
                     <div class="card-header btn-orange pt-4">
