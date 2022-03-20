@@ -6,7 +6,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>ITSC-HRMS Login</title>
+  <title>HR Login</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="{% static 'hrms/vendors/iconfonts/mdi/css/materialdesignicons.min.css' %} ">
 
@@ -26,9 +26,9 @@
         <div class="row w-100 mt-5">
           <div class="col-lg-4 mx-auto">
             <div class="text-center mb-2">
-              <img src=" {% static 'hrms/images/human.png' %} " width="150px" alt="">
+              <img src=" {% static 'hrms/images/chmscbin.webp' %} " width="150px" alt="">
             </div>
-            <p class="display-4 mb-4 text-center text-white bg-info">Administrator Login</p>
+            <p class="display-4 mb-4 text-center text-white bg-info">HR MANAGER</p>
             <div class="auto-form-wrapper mb-5">
               <form action=" {% url 'hrms:login' %} " method ='POST'>
                 {% csrf_token %}
@@ -58,12 +58,12 @@
                   <button class="btn btn-primary submit-btn btn-block">Login</button>
                 </div>               
                 <div class="text-block text-center my-3">
-                  <span class="text-small font-weight-semibold">Not a member ?</span>
+                  <span class="text-small font-weight-semibold">Not an Administrator</span>
                   <a href="{%  url 'hrms:reg'  %} " class="text-black text-small">Create new account</a>
                 </div>
               </form>
             </div>
-            <p class="footer-text text-center mt-4" style="background-color: blue; color: white;">Copyright © {{ 2021}} Itsourcecode Human Resource Management. All Rights Reserved.</p>
+            <p class="footer-text text-center mt-4" style="background-color: blue; color: white;">Copyright © {{ 2022}} Peter Lemashon. All Rights Reserved.</p>
           </div>
         </div>
       </div>
