@@ -8,61 +8,104 @@
     <link rel="stylesheet" href=" ../../../../static hrms/css/style.css ">
     <style>
         .body-bg{
-            background-image: url("{% static 'hrms/images/favicon-1.jpeg' }");
-            background: green;
-            background: -webkit-linear-gradient(to right, #ef8e38, #108dc7);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, red, blue); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-        }
-        .btn-orange{
-            background: #FDC830;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, yellow, red); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        }
-        .btn-selenium{
-            background: #0f0c29;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, blue, red); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        }
-        .Log{
-            font-size: 100%;
-            text-align: justify;
-            text-emphasis-position: top;
-        }
+	background-image: url("{% static 'hrms/images/girr.webp' %}");
+	background-repeat: no-repeat;
+	background-size: 100% 105%;
+}
+.Ken{  
+   	position: absolute;
+    left: 2%;
+    top: 0;
+    z-index: 905;
+    margin-top: 0px;
+  } 
+  .log{
+  	position: absolute;
+    right: 2%;
+    top: 0;
+    z-index: 905;
+    margin-top: 0px;
+  }
+  .logo{
+  	width: 650px;
+    margin: 0 auto;
+    background: gray;
+    text-align: center;
+  }
+  .lin{
+  	text-align: center;
+  	margin-top: 70px;
+  	font-size: 23px;
+  	color: green;
+  }
+  a, a:link, a:visited, a:active, a:hover{
+  color: #228B22;
+  text-decoration: none;
+  background-color: #FFFFFF;
+}
+h2{
+	text-align: center;
+	font-weight: 900;
+	color: white;
+	background-color: green;
+}
+.desc{
+	color: white;
+	text-align: justify;
+	font-weight: 700;
+}
+.miss{
+	color: white;
+	text-align: center;
+	font-weight: 600;
+	font-size: 23px;
+}
+.viss{
+	color: white;
+	text-align: center;
+	font-weight: 600;
+	font-size: 23px;
+}
+.mar{
+	color: cyan;
+	font-size: 24px;
+	font-style: italic;
+	font-weight: 800;
+}
+.display-4{
+    text-align: center;
+    color: green;
+}
         
     </style>
     <title>Home</title>
 </head>
-<body class='Log'>
-    <img src="{% static 'hrms/images/chmscbin.webp' %}" height="180px" width="180px">&emsp; &emsp; &emsp;
-    <h1>NAROK COUNTY GOVERNMENT HRM SYSTEM</h1>
-    <section class="container">
-        <nav class="navbar navbar-light bg-light mt-3 mb-2 ">
-            <h1 class="display-4 mt-2 text-right text-warning">  <a href=" {% url 'hrms:recruitment' %} "> &emsp; &emsp; &emsp; &emsp;  &emsp; We are Hiring !!! </a> <a href=" {% url 'hrms:login' %} "> Administrator &rarr; </a>
-               
-        </nav>
-        
-        <div class="row">
-            
-            <div class="col-lg-6">
-                <div class="card mb-3 shadow">
-                    <div class="card-header btn-orange pt-4">
-                        <p class="lead">GOVERNMENT MISSION</p>
-                    </div>
-
-                    <div class="card-body">
-                        <p class="lead text-justify">
-                            The Human resource management is the strategic approach to the effective management of people in a company or organization such that they help their business gain a competitive advantage. It is designed to maximize employee performance in service of an employer's strategic objectives. 
-                        </p><hr>
-                        <p class="lead text-justify">Narok County Government is located in the Southern Part of Kenya and is famously known for being home to the great Maasai Mara</p>
-                    </div>
-                </div>
+<body class="body-bg"><div class="Ken">
+    <img src="{% static 'hrms/images/chmscbin.webp' %}" height="150px" width="150px"></div>
+    <div><h1 class="logo">NAROK COUNTY GOVERNMENT ADVANCED STAFF MANAGEMENT SYSTEM</h1></div><div class="log"><img src="{% static 'hrms/images/Kenya.jpg' %}" height="150px" width="150px"></div>
+            <div class="lin">  <a href=" {% url 'hrms:login' %} "> ADMINSTRATOR</a> &emsp; &emsp; &emsp; &emsp;  &emsp;
+                <a href=" {% url 'hrms:recruitment' %} "> New Employee? Register Here</a>
+            </div> 
+            <p><h2>OVERVIEW</h2></p><div class='desc'>
+                Narok County Government was formed by the County Governments Act of 2012 as prescribed in the 2010 Constitution of Kenya. 
+                It is one of the 47 devolved units situated in the Great Rift Valleyin the Southern part ofthe Country where it boarders the republic of Tanzania.
+                 Narok County has its headquarters in Narok Town, off Narok Nakuru Road.
+                Narok County comprises of six (6) sub-counties namely: Narok North, Narok West, Narok East, Narok South, Transmara East and Transmara West. 
+                The County shares an economic block with Kajiado County known as the Narok Kajiado Economic Block (NAKAEB).
+                The aim of the economic block is to improve the various sectors of the economy in order to increase exports to African countries and abroad. 
+                The main economic activities in the county include pastoralism, crop farming, tourism and trade among other activities undertaken in small scale. 
+                The famous Maasai Mara Game Reserve, featuring the Great Wildebeest Migration which is one of the “Seven Wonders of the World" is located within the County. 
+                The county has a robust ecological system that residents depend on for agriculture, tourism, water and many other benefits. 
+                As per the UN study/research for the Kenya Vision 2030, Narok County is marked as one of the fundamental counties for the achieving economic pillar.
+                Key contributions are in the tourism sector through the Maasai Mara National Reserve and the agricultural sector through livestock farming.
             </div>
-        </div>
-    </section>
-    
+            <p><h2>MISSION</h2></p><div class='miss'>
+                Transforming lives through harnessing the diverse natural resources, rich culture and emerging opportunities in the county.
+            </div>
+            <p><h2>VISION</h2></p><div class='viss'>The premier county of choice in diversity and opportunities for prosperity.</div>
+            <p class='mar'><marquee scrollamount="14"> Equity Inclusiveness Efficiency Accountability and Integrity</p></marquee>
     <nav>
-        <p class="display-4 mx-auto bg-light">DEVELOPED BY Peter Lemashon</p>
+        <p class="display-4 mx-auto bg-light">DEVELOPED AND MANAGED BY: PETER LEMASHON</p>
     </nav>
 </body>
 </html>
