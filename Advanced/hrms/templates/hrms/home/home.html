@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href=" ../../../../static hrms/css/style.css ">
+    <style>
+        .body-bg{
+	background-image: url("{% static 'hrms/images/girr.webp' %}");
+	background-repeat: no-repeat;
+	background-size: 100% 105%;
+}
+.Ken{  
+   	position: absolute;
+    left: 2%;
+    top: 0;
+    z-index: 905;
+    margin-top: 0px;
+  } 
+  .log{
+  	position: absolute;
+    right: 2%;
+    top: 0;
+    z-index: 905;
+    margin-top: 0px;
+  }
+  .logo{
+  	width: 650px;
+    margin: 0 auto;
+    background: gray;
+    text-align: center;
+  }
+  .lin{
+  	text-align: center;
+  	margin-top: 70px;
+  	font-size: 23px;
+  	color: green;
+  }
+  a, a:link, a:visited, a:active, a:hover{
+  color: #228B22;
+  text-decoration: none;
+  background-color: #FFFFFF;
+}
+h2{
+	text-align: center;
+	font-weight: 900;
+	color: white;
+	background-color: green;
+}
+.desc{
+	color: white;
+	text-align: justify;
+	font-weight: 700;
+}
+.miss{
+	color: white;
+	text-align: center;
+	font-weight: 600;
+	font-size: 23px;
+}
+.viss{
+	color: white;
+	text-align: center;
+	font-weight: 600;
+	font-size: 23px;
+}
+.mar{
+	color: cyan;
+	font-size: 24px;
+	font-style: italic;
+	font-weight: 800;
+}
+.display-4{
+    text-align: center;
+    color: green;
+}
+        
+    </style>
+    <title>Home</title>
+</head>
+<body class="body-bg"><div class="Ken">
+    <img src="{% static 'hrms/images/chmscbin.webp' %}" height="150px" width="150px"></div>
+    <div><h1 class="logo">NAROK COUNTY GOVERNMENT ADVANCED STAFF MANAGEMENT SYSTEM</h1></div><div class="log"><img src="{% static 'hrms/images/Kenya.jpg' %}" height="150px" width="150px"></div>
+            <div class="lin">  <a href=" {% url 'hrms:login' %} "> ADMINSTRATOR</a> &emsp; &emsp; &emsp; &emsp;  &emsp;
+                <a href=" {% url 'hrms:recruitment' %} "> Looking for Vacancy?</a>
+            </div> 
+            <p><h2>OVERVIEW</h2></p><div class='desc'>
+                Narok County Government was formed by the County Governments Act of 2012 as prescribed in the 2010 Constitution of Kenya. 
+                It is one of the 47 devolved units situated in the Great Rift Valleyin the Southern part ofthe Country where it boarders the republic of Tanzania.
+                 Narok County has its headquarters in Narok Town, off Narok Nakuru Road.
+                Narok County comprises of six (6) sub-counties namely: Narok North, Narok West, Narok East, Narok South, Transmara East and Transmara West. 
+                The County shares an economic block with Kajiado County known as the Narok Kajiado Economic Block (NAKAEB).
+                The aim of the economic block is to improve the various sectors of the economy in order to increase exports to African countries and abroad. 
+                The main economic activities in the county include pastoralism, crop farming, tourism and trade among other activities undertaken in small scale. 
+                The famous Maasai Mara Game Reserve, featuring the Great Wildebeest Migration which is one of the “Seven Wonders of the World" is located within the County. 
+                The county has a robust ecological system that residents depend on for agriculture, tourism, water and many other benefits. 
+                As per the UN study/research for the Kenya Vision 2030, Narok County is marked as one of the fundamental counties for the achieving economic pillar.
+                Key contributions are in the tourism sector through the Maasai Mara National Reserve and the agricultural sector through livestock farming.
+            </div>
+            <p><h2>MISSION</h2></p><div class='miss'>
+                Transforming lives through harnessing the diverse natural resources, rich culture and emerging opportunities in the county.
+            </div>
+            <p><h2>VISION</h2></p><div class='viss'>The premier county of choice in diversity and opportunities for prosperity.</div>
+            <p class='mar'><marquee scrollamount="14"> Equity Inclusiveness Efficiency Accountability and Integrity</p></marquee>
+    <nav>
+        <p class="display-4 mx-auto bg-light">DEVELOPED AND MANAGED BY: PETER LEMASHON</p>
+    </nav>
+</body>
+</html>
