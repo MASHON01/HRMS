@@ -28,9 +28,25 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '#=a7f+o=$5#uln!f9$)d)ax225+(tq&5i613&l^cg2h_$pjg_v'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+CSRF_COOKIE_SECURE = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+# security.W012
+SESSION_COOKIE_SECURE = True
+
+# security.W008
+SECURE_SSL_REDIRECT = True
+
+# security.W004
+SECURE_HSTS_SECONDS = 31536000 # One year in seconds
+
+# Another security settings
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_HSTS_PRELOAD = True
+SECURE_CONTENT_TYPE_NOSNIFF = True
+
+ALLOWED_HOSTS = ['localhost',
+  '127.0.0.1','https://advanced-staff-system.herokuapp.com','*']
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
